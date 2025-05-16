@@ -41,7 +41,11 @@ def main():
         elif op_menu == 3:
             pass
         elif op_menu == 4:
-            pass
+         print("vai excluir um veículo?".upper() .rjust(100))
+         chassi = input("infome então o numero do chassi: ")
+
+         dao_class_object.excluir_carro(chassi)
+
         elif op_menu == 0:
             print("Encerrando o programa...".upper())
             break
